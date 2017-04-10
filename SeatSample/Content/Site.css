@@ -1,0 +1,617 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+div#concert ul {
+    padding-left: 0px;
+}
+
+span.cube {
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    margin-bottom: -3px;
+}
+
+span.plan_ {
+    background: none repeat scroll 0 0;
+    border: 1px solid grey;
+}
+
+span.plan_red {
+    background: none repeat scroll 0 0 #fa9c9f;
+    border: 1px solid grey;
+}
+
+span.plan_blue {
+    background: none repeat scroll 0 0 #c0ffff;
+    border: 1px solid grey;
+}
+
+span.plan_green {
+    background: none no-repeat scroll 0 0 #80ff80;
+    border: 1px solid grey;
+    background-image: url(../img/disabled.png);
+}
+
+span.plan_fuchsia {
+    background: none repeat scroll 0 0 #ffc0ff;
+    border: 1px solid grey;
+}
+
+span.plan_yellow {
+    background: none repeat scroll 0 0 #ffffc0;
+    border: 1px solid grey;
+}
+
+span.plan_black {
+    background: none repeat scroll 0 0 #202020;
+    border: 1px solid grey;
+    background-image: url(../img/disabled.gif);
+}
+
+span.plan_salmon {
+    background: none repeat scroll 0 0 #FA8072;
+    border: 1px solid grey;
+}
+
+span.plan_skyblue {
+    background: none repeat scroll 0 0 #87CEEB;
+    border: 1px solid grey;
+}
+
+span.plan_teal {
+    background: none repeat scroll 0 0 #04aca9;
+    border: 1px solid grey;
+}
+
+span.plan_thistle {
+    background: none repeat scroll 0 0 #D8BFD8;
+    border: 1px solid grey;
+}
+
+span.plan_palegreen {
+    background: none repeat scroll 0 0 #98FB98;
+    border: 1px solid grey;
+}
+
+span.plan_orange {
+    background: none repeat scroll 0 0 #FFA500;
+    border: 1px solid grey;
+}
+
+ul#legend {
+    height: 14px;
+}
+
+    ul#legend li {
+        float: left;
+    }
+
+ul#discount, ul#discount_choice_text_holder {
+    margin: 0;
+    float: left;
+}
+
+.xx:hover {
+    background-color: #DFEDF8;
+    cursor: pointer;
+}
+
+.xx {
+    cursor: pointer;
+}
+
+#kill_discount {
+    cursor: pointer;
+}
+
+    #kill_discount:hover {
+        background-color: #DFEDF8;
+        cursor: pointer;
+    }
+
+ul#discount li {
+    float: left;
+    margin-right: 10px;
+}
+
+ul#legend li:last-child {
+    height: 14px;
+    width: 16px;
+}
+
+span.plan_incart {
+    background: none repeat scroll 0 0 #FF00FF;
+    border: 1px solid #808080;
+}
+
+span.plan_reserved {
+    background: none repeat scroll 0 0 #808080;
+    border: 1px solid #808080;
+}
+
+span.plan_locked {
+    background: none repeat scroll 0 0 #8080C0;
+    border: 1px solid #808080;
+}
+
+span.plan_own {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #808080;
+}
+
+div#ajax_status {
+    display: none;
+    text-align: center;
+    font-size: 16px;
+    height: 18px;
+    padding: 3px 3px 3px;
+}
+
+div#cart_timeout {
+    font-size: 12px;
+    font-weight: bold;
+    color: #CC0000;
+}
+
+div#cleared {
+    width: 795px;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666666;
+}
+
+li.timedout {
+    text-align: center;
+    margin-top: 18px;
+    text-shadow: 2px 0 #EDEDED;
+}
+
+div#indicator {
+    margin-top: 2px;
+    height: 11px;
+    width: 16px;
+}
+
+div.activity {
+    background: url('../img/spinner.gif') no-repeat left top;
+}
+
+li.activity_on {
+    color: #000000 !important;
+    background: none repeat scroll 0 0 #FFFF00 !important;
+}
+
+li.activity_off {
+    color: #000000 !important;
+    background: none repeat scroll 0 0 #FFFF00 !important;
+}
+
+div#stage_label {
+    width: 638px;
+    margin: auto;
+    margin-top: 5px;
+    background: url('/Content/stage.png') no-repeat center top;
+    text-align: center;
+    padding-top: 40px;
+    font-family: Arial,Verdana,Helvetica, sans-serif;
+    font-size: 26px;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    height: 100px;
+    color: #808080;
+    font-weight: bold;
+    outline: 0px solid #C0C0C0;
+}
+
+div.seatplan {
+    width: 740px;
+    margin-top: 10px;
+    padding: 10px 27px 45px 31px;
+    outline: 0px solid #C0C0C0;
+    margin-left: auto;
+    margin-right: auto;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    /*background: url('../img/bg.png') no-repeat center top;*/
+}
+
+ul.hidden {
+    display: none !important;
+}
+
+ul.r {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    height: 24px;
+}
+
+    ul.r li {
+        float: left;
+        width: 26px;
+        height: 20px;
+        font-family: Verdana;
+        font-size: 10px;
+        padding: 0 0 4px;
+        margin-left: 2px;
+        margin-right: 2px;
+        text-align: center; /*outline:1px solid #C0C0C0;*/
+        border: 1px solid #808080;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        color: #000000;
+        cursor: pointer;
+    }
+
+        ul.r li.ltr {
+            font-weight: bold;
+            color: #ff0000;
+            outline: 0px solid #c0c0c0;
+            background-color: none;
+            cursor: default;
+            border: 0px solid #808080;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            margin: 0 15px;
+        }
+
+        ul.r li.b {
+            background: none repeat scroll 0 0 transparent;
+            cursor: default;
+            outline: 0px solid transparent;
+            border: 0px solid #808080;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+        }
+
+        ul.r li.h {
+            width: 11px;
+            background: none repeat scroll 0 0 transparent;
+            outline: 0px solid transparent;
+            cursor: default;
+            border: 0px solid #808080;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+        }
+
+#gap {
+    height: 80px;
+}
+/*fix opera outline*/
+body.opera ul.r li {
+    outline: 0px;
+}
+
+    body.opera ul.r li.ltr {
+        outline: 0px;
+    }
+/*eof fix opera outline*/
+ul.r li.bl, ul#ajax_cart li.bl {
+    background-color: #C0FFFF;
+}
+
+ul.r li.rd, ul#ajax_cart li.rd {
+    background-color: #FFC0C0;
+}
+
+ul.r li.gr {
+    background-color: #80FF80;
+    background-image: url(/Content/disabled.png);
+}
+
+ul#ajax_cart li.gr {
+    background-color: #80FF80;
+}
+
+ul.r li.or, ul#ajax_cart li.or {
+    background-color: #FFA500;
+}
+
+ul.r li.fu, ul#ajax_cart li.fu {
+    background-color: #FFC0FF;
+}
+
+ul.r li.ye, ul#ajax_cart li.ye {
+    background-color: #FFFFC0;
+}
+
+ul.r li.sa, ul#ajax_cart li.sa {
+    background-color: #FA8072;
+}
+
+ul.r li.sb, ul#ajax_cart li.sb {
+    background-color: #87CEEB;
+}
+
+ul.r li.te, ul#ajax_cart li.te {
+    background-color: #008080;
+}
+
+ul.r li.th, ul#ajax_cart li.th {
+    background-color: #D8BFD8;
+}
+
+ul.r li.pg, ul#ajax_cart li.pg {
+    background-color: #98FB98;
+}
+
+ul.r li.o {
+    color: #000000;
+    background-color: #FFFFFF;
+    cursor: default;
+}
+
+ul.r li.x {
+    color: #FFFFFF;
+    background-color: #808080;
+    cursor: default;
+}
+
+ul.r li.y {
+    color: #FFFFFF;
+    background-color: #FF00FF;
+    cursor: pointer;
+}
+
+ul.r li.z {
+    color: #FFFFFF;
+    background-color: #8080C0;
+    cursor: default;
+}
+
+ul.r li.s:hover {
+    background-color: #000;
+    color: #FFFFFF;
+}
+
+#easyTooltip {
+    background: white;
+    margin: 0;
+    padding: 5px 10px;
+    border: 1px solid #CCC;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    font: 12px/16px "Lucida Grande",Arial,Sans-serif;
+    line-height: 16px;
+    color: #666;
+    z-index: 100;
+}
+
+ul#ajax_cart {
+    cursor: default;
+    list-style-type: none;
+    margin-left: -8px;
+    padding-left: 8px;
+    margin-top: 0px;
+}
+
+    ul#ajax_cart li {
+        height: 65px;
+        padding: 0px;
+        border-bottom: 5px dotted #F9F9F9;
+    }
+
+        ul#ajax_cart li:first-child {
+            padding-top: 5px;
+        }
+
+        ul#ajax_cart li:last-child {
+            border-bottom: 0px;
+        }
+
+        ul#ajax_cart li span {
+        }
+
+            ul#ajax_cart li span.cht {
+                float: left;
+                padding-left: 4px;
+                color: #555555;
+                margin-top: 0px;
+                height: 10px;
+                font-size: 11px;
+                font-weight: bold;
+            }
+
+            ul#ajax_cart li span.pn {
+                float: left;
+                padding-left: 4px;
+                color: #000000;
+                margin-top: 3px;
+                font-size: 11px;
+            }
+
+            ul#ajax_cart li span.pp {
+                float: right;
+                margin-right: 2px;
+                color: #000000;
+                margin-top: 3px;
+                font-size: 11px;
+            }
+
+            ul#ajax_cart li span.cnt {
+                display: none;
+            }
+
+        ul#ajax_cart li div.bd {
+            background: url('../img/ajaxcart_delete.png') no-repeat 0 0 transparent;
+            float: right;
+            margin-right: 2px;
+            margin-top: 3px;
+            height: 16px;
+            width: 16px;
+            cursor: pointer;
+        }
+        /* isMobile */
+        ul#ajax_cart li div.bdm {
+            background: url('../img/delete.png') no-repeat 0 0 transparent;
+            float: right;
+            margin-right: 2px;
+            margin-top: 3px;
+            height: 25px;
+            width: 25px;
+            cursor: pointer;
+        }
+
+span.bdcl {
+    background: url('../img/ajaxcart_delete.png') no-repeat 0 0 transparent;
+    float: right;
+    margin-right: 2px;
+    margin-top: 3px;
+    margin-left: 3px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    padding-right: 4px;
+}
+
+#btnClearCart {
+    cursor: pointer;
+}
+
+ul#ajax_cart li a {
+    color: #555555;
+    text-decoration: underline;
+}
+
+    ul#ajax_cart li a:hover {
+        text-decoration: none;
+    }
+
+div#ajax_cart_stats {
+    background: none repeat scroll 0 0 #FEB64E;
+    text-align: left;
+    border-top: 1px solid #dddddd;
+    color: #F9F9F9;
+    height: 17px;
+    margin-top: -12px;
+    padding: 6px 4px;
+    margin-bottom: 8px;
+    padding-bottom: 25px;
+}
+
+span#total_price {
+    float: right;
+}
+
+.ui-effects-transfer {
+    border: 1px dotted #DFDFDF;
+    background: #A6A6A6;
+    opacity: 0.2;
+    z-index: 999;
+}
+
+div#box_ajaxCart div#btnCheckOut {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    div.seatplan {
+        width: 454px;
+        outline: 0px solid red;
+        padding: 10px 10px 45px 10px;
+    }
+
+    div#stage_label {
+        width: 464px;
+    }
+
+    ul.r li {
+        width: 16px;
+        font-size: 8px;
+        height: 18px;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+
+        ul.r li.h {
+            width: 7px;
+        }
+}
+
+@media (max-width: 480px) {
+    div.seatplan {
+        width: 294px;
+        outline: 0px solid green;
+        padding: 0px;
+    }
+
+    div#stage_label {
+        width: 320px;
+    }
+
+    ul.r li {
+        width: 14px;
+        font-size: 8px;
+        height: 16px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+        ul.r li.ltr {
+            margin: 0px;
+        }
+
+        ul.r li.h {
+            width: 7px;
+        }
+}
+
+#easyTooltip {
+    background: white;
+    margin: 0;
+    padding: 5px 10px;
+    border: 1px solid #CCC;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    font: 12px/16px "Lucida Grande",Arial,Sans-serif;
+    line-height: 16px;
+    color: #666;
+    z-index: 100;
+}
+
+.center-margin {
+    margin: 0 auto;
+}
